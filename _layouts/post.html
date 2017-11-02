@@ -8,19 +8,22 @@
   <link href={{ "/public/css/main.css" | relative_url }} rel="stylesheet">
   <link href={{ "/public/css/monokai.css" | relative_url }} rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="/favicon.ico" sizes="16x16" />
 </head>
 <body>
   <div class="wrapper">
     <section class="logo">
-      <img src="/public/images/logo.svg" alt="" />  
+      <a href="https://jeffreyvanhoven.nl">
+        <img src="/public/images/logo.svg" alt="" />  
+      </a>
       <h2>A journey into Datascience</h2>        
     </section>
     <nav>
       {% assign current = page.url | downcase | split: '/' %}
       <ul>
         {% for node in site.pages %}
-          {% assign node_name = node.url | downcase | split: '/' %}
-          {% if node_name == current %}
+          {% assign node_name = node.title | downcase %}
+          {% if page.url contains node_name %}
             <li class="active">
               <a href={{ node.url }}>{{ node.title }}</a>
             </li>
