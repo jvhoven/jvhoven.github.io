@@ -29,16 +29,13 @@ collections:
     output: true
     permalink: /:path
 
-highlighter: rouge
-fenced_code_blocks: true
-
 # Build settings
 markdown: kramdown
 
 kramdown:
   input: GFM
-  hard_wrap: false
-  
+  syntax_highlighter: rouge
+
 sass:
   style: compressed
 

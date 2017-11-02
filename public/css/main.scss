@@ -16,7 +16,7 @@ h1 {
   color: #FFF;
 }
 
-h2 {
+h2, .grid-item span {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
   letter-spacing: 1px;
@@ -36,6 +36,11 @@ p {
   display: flex;
   width: 70vw;
   margin: 0 auto;
+}
+
+.wrapper--column {
+  flex-direction: column;
+  text-align: left;
 }
 
 .wrapper img {
@@ -104,16 +109,37 @@ li > a:hover {
 }
 
 .grid-item {
+  display: inline-block;
   border-radius: 2px;
   background-color: #eee;
-  display: inline-block;
   margin: 0 0 1em;
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.grid-item span {
+  display: inline-block;
+  color: #a5a5a5;
+}
+
+.grid-item h2 {
+  line-height: 200px;
+  margin: 0;
 }
 
 .grid-item:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.3);
   cursor: pointer;
+}
+
+.grid-item:hover h2 {
+  color: #2196F3;
+}
+
+.highlight {
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
