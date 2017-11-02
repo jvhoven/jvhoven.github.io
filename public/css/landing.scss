@@ -1,0 +1,68 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(/public/fonts/BebasLight.otf);
+}
+
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+body {
+  margin: 100px 0 0 0;
+  padding: 0;
+
+  background-color: #494949;
+  text-align: center;
+}
+
+body, html {
+  width: 100vw;
+  height: 100%;
+}
+
+h2 {
+  font-family: BebasNeue;
+  font-size: 4em;
+  letter-spacing: 10px;
+  color: #8C8A8A;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  
+  display: block;
+  margin: 45px 0;  
+}
+
+div {
+  text-align: center;
+}
+
+img {
+  margin: 45px 0;
+  width: 250px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul > li {
+  margin-right: 50px;
+  float: left;
+  list-style: none;
+}
+
+ul > li > a {
+  font-family: 'Open Sans', sans-serif;
+  color: #E5E5E5;
+  text-decoration: none;
+  font-size: 12px;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Journey Into Datascience</title>
+  <link href="/public/css/landing.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <div>
+      <img src="/public/images/logo.svg" alt="" />  
+    </div>
+    <div>
+        <h2>A journey into Datascience</h2>        
+    </div>
+    <div>
+      <ul>
+        {% for node in site.pages %}
+          <li>
+            <a href={{ node.url }}>{{ node.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
