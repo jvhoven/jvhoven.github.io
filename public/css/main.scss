@@ -28,7 +28,7 @@ h2, .grid-item span {
 p {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #8C8A8A;
 }
 
@@ -67,8 +67,9 @@ aside {
 }
 
 ul {
-  float: right;
+  float: left;
   margin: 0;
+  padding: 0;
 }
 
 ul > li {
@@ -108,6 +109,10 @@ li > a:hover {
   grid-auto-flow: dense;
 }
 
+.grid--portfolio {
+  column-count: 1;
+}
+
 .grid-item {
   display: inline-block;
   border-radius: 2px;
@@ -142,4 +147,20 @@ li > a:hover {
   border-radius: 4px;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+.fluid-media {
+  position: relative;
+  padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.fluid-media iframe {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
