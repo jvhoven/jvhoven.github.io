@@ -34,8 +34,6 @@ h3, h4 {
   display: block;
 }
 
-
-
 p, li, span {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
@@ -172,12 +170,14 @@ li > a:hover {
   overflow: hidden;
 }
 
-.fluid-media iframe {
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
+.fluid-media {
+  iframe, img { 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 table {
