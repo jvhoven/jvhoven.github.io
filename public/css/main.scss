@@ -25,11 +25,22 @@ h2, .grid-item span {
   display: block;
 }
 
-p {
+h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: rgb(190, 190, 190);
+  
+  display: block;
+}
+
+
+
+p, li, span {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8em;
-  color: #8C8A8A;
+  color: rgb(180, 180, 180);
 }
 
 .wrapper {
@@ -54,6 +65,10 @@ p {
 
 main {
   display: flex;
+
+  li {
+    list-style: disc !important;
+  }
 }
 
 nav {
@@ -173,8 +188,14 @@ table {
   border-radius: 4px;
   width: 100%;
 }
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+.diagram {
+  width: 40% !important;
+  background-color: #FFF;
 }

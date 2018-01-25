@@ -15,9 +15,9 @@ category: assignments
   </aside>
   <div class="grid">        
     {% for post in site.categories[page.category] %}
-    <div onclick="window.location.href = '{{ post.url }}'" class="grid-item">
-      <h2>{{ post.title }}</h2>
-    </div>
+      <div onclick="window.location.href = '{{ post.url }}'" class="grid-item">
+        <h2>{{ post.title }}</h2>
+      </div>
     {% endfor %}
   </div>
 </main>
