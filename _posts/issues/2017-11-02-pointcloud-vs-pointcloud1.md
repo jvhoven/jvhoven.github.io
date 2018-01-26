@@ -6,6 +6,10 @@ categories: issues
 issue_id: 64
 ---
 
+For evaluating a pointcloud based on a groundtruth we have tried different approaches. At first we have attempted to evaluate the generated point cloud a KITTI sequence through the ORB_SLAM2 algorithm by using the publicly available LiDAR data from the KITTI dataset. Unfortunately this was not practically feasible for us to use within the project as we did not have a LiDAR available. Nonetheless we still examined the possibilities through experiments by the off chance that we could borrow a LiDAR from the Technical University of Delft with which we cooperate. (Unfortunately the experiments conducted are lost and cannot be showcased in this issue.)
+
+After coming to the conclusion that LiDAR based evaluation would not work, we identifed the possibilities of our ZED camera. This in turn gave us the idea to evaluate the point cloud by using the depth image that the camera could create. A quick experiment showed that depth images are not sufficient because they are always relative to a frame and the perspective of the camera onto the frame would result in varying depth images. Therefore we have decided that depth images are not practical for the evaluation of a point cloud.
+
 ```python
 import xml.etree.ElementTree as ET
 import os

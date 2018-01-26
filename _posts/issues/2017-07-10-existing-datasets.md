@@ -6,8 +6,7 @@ categories: issues
 issue_id: 2
 ---
 
-A literature scan for publicy available datasets for evaluation an autonomous vehicle or a SLAM algorithm. Along with the datasets we've established a list of the sensors used to record the dataset. 
-By indexing the datasets we can find the most suitable one for our project. In order to thoroughly test our algorithm it was necessary to create a list based on the features of the dataset. We have found four prominent datasets:
+A literature scan for publicy available datasets for evaluating a SLAM algorithm. Along with the datasets we've established a list of the sensors used to record the dataset. By indexing the datasets we can find the most suitable one for our project. In order to thoroughly test our algorithm it was necessary to create a list based on the features of the dataset. We have found four prominent datasets, namely the Oxford dataset, the Munich datasets and the widely known and used KITTI dataset. By setting up a list of features from which the dataset has been build, we can easily pick out the best fit for our purposes.
 
 |   |  | Oxford (5) | Munich (6) | Munich (7) | KITTI (8) |
 |---|:----------:|:----------:|:----------:|:---------:|
